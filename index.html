@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gatito Runner Deluxe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="accessibility-controls">
+      <button id="btnAumentarFonte" title="Aumentar Letra">A+</button>
+      <button id="btnDiminuirFonte" title="Disminuir Letra">A-</button>
+      <button id="btnTema" title="Cambiar Modo">🌙 Modo Noche</button>
+    </div>
+  </div>
+
+  <main class="container">
+    <h1>Gatito Runner Deluxe</h1>
+    
+    <div class="controls-panel">
+      <label for="genderSelect">Personaje:</label>
+      <select id="genderSelect">
+        <option value="female">Gatita Blanca</option>
+        <option value="male">Gatito Amarillo</option>
+        <option value="calico">Gatito Calicó (Manchado)</option>
+      </select>
+
+      <button id="btnMusic" class="btn-neon">🎵 Música Relajante</button>
+    </div>
+
+    <div class="game-card">
+      <canvas id="gameCanvas" width="700" height="250"></canvas>
+      <p class="instructions">Presiona <strong>Espacio</strong> o haz clic en la pantalla para saltar.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
